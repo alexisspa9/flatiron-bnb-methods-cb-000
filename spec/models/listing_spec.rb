@@ -118,9 +118,7 @@ describe Listing do
       expect(listing.errors.full_messages).to include "Price can't be blank"
     end
 
-    it 'is invalid without an associated neighborhood' do 
-      expect(listing.errors.full_messages).to include "Neighborhood can't be blank"
-    end
+  
   end
 
   describe 'callback methods' do
